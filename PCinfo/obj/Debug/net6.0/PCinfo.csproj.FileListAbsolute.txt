@@ -1,0 +1,17 @@
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\PCinfo.exe
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\PCinfo.deps.json
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\PCinfo.runtimeconfig.json
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\PCinfo.dll
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\PCinfo.pdb
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\Spectre.Console.dll
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.csproj.AssemblyReference.cache
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.AssemblyInfoInputs.cache
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.AssemblyInfo.cs
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.csproj.CoreCompileInputs.cache
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.csproj.CopyComplete
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.dll
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\refint\PCinfo.dll
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.pdb
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\PCinfo.genruntimeconfig.cache
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\obj\Debug\net6.0\ref\PCinfo.dll

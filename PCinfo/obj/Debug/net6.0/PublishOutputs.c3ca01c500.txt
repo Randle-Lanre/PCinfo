@@ -1,0 +1,6 @@
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\publish\PCinfo.exe
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\publish\PCinfo.dll
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\publish\PCinfo.deps.json
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\publish\PCinfo.runtimeconfig.json
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\publish\PCinfo.pdb
+C:\Users\kindlr2\RiderProjects\PCinfo\PCinfo\bin\Debug\net6.0\publish\Spectre.Console.dll
