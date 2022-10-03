@@ -66,8 +66,8 @@ AnsiConsole.Live(table).Start(x =>
 
     table.AddRow(new Markup("connected"), new Markup($"[green] {connected} [/]"));
 
-
     table.AddRow(new Markup("Uptime"), new Markup($"[green]{RuniningTime.Uptime}[/]"));
+
 
     table.AddRow(new Markup("Used Storage Space"),
         new Markup(
@@ -75,8 +75,6 @@ AnsiConsole.Live(table).Start(x =>
     table.AddRow(new Markup("Ram usage"), new Markup($"[green] {ramCounter.NextValue()} MB [/]"));
     table.AddRow(new Markup("CPU usage"), new Markup($"[green] {Math.Round(CupValue(), 1)} % [/]"));
     table.AddRow(new Markup("Window version"), new Markup($"[green] {os} [/]"));
-    x.Refresh();
-    Thread.Sleep(1000);
 });
 
 
