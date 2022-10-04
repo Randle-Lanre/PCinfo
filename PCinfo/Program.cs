@@ -35,6 +35,9 @@ float CupValue()
 #endregion
 
 
+
+
+
 // create table 
 var table = new Table();
 
@@ -55,7 +58,7 @@ table.Title(new TableTitle("[bold red] MY PC INFO [/]"));
 Console.WriteLine("\n");
 
 
-AnsiConsole.Live(table).Start(x =>
+ AnsiConsole.Live(table).AutoClear(false).Overflow(VerticalOverflow.Ellipsis).Cropping(VerticalOverflowCropping.Top).Start(  x =>
 {
 //row setup
 
@@ -67,15 +70,26 @@ AnsiConsole.Live(table).Start(x =>
     table.AddRow(new Markup("connected"), new Markup($"[green] {connected} [/]"));
 
     table.AddRow(new Markup("Uptime"), new Markup($"[green]{RuniningTime.Uptime}[/]"));
-
-
+    x.Refresh();
+    Thread.Sleep(1000);
+   
+    
     table.AddRow(new Markup("Used Storage Space"),
         new Markup(
             $"[green]Available storage space is {DriveSpace.FormatFileSize(DriveSpace.GetTotalFreeSpace())} [/]"));
     table.AddRow(new Markup("Ram usage"), new Markup($"[green] {ramCounter.NextValue()} MB [/]"));
     table.AddRow(new Markup("CPU usage"), new Markup($"[green] {Math.Round(CupValue(), 1)} % [/]"));
     table.AddRow(new Markup("Window version"), new Markup($"[green] {os} [/]"));
+    
+    
 });
 
+// Console.WriteLine("running time is: {0} ", RuniningTime.TimesRun());
 
-Console.ReadLine();
+
+// while (true)
+// {
+//     Timer timer = null;
+//     new Timer(RuniningTime.GetUpTime, null,0, 2000);
+//    
+// }

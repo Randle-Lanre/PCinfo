@@ -4,9 +4,10 @@ namespace PCinfo;
 
 public static class RuniningTime
 {
-    public static readonly string Uptime = GetUpTime();
+    // public static readonly string Uptime = GetUpTime();
+    public static  string Uptime= GetUpTime();
 
-    private static string GetUpTime()
+    public static string GetUpTime()
     {
         var timeInMilliseconds = TimeSpan.FromMilliseconds(GetTickCount64());
         var hr = timeInMilliseconds.Hours;
@@ -14,11 +15,18 @@ public static class RuniningTime
         var seconds = timeInMilliseconds.Seconds;
         var newDateFormat = $"{hr}:{minutes}:{seconds}";
 
-        Thread.Sleep(500);
         return newDateFormat;
+        // Thread.Sleep(500);
+        // Uptime = newDateFormat;
+        // Console.WriteLine("method calls{0}", Uptime + "\n");
+
     }
+
+    
 
 
     [DllImport("kernel32")]
     private static extern ulong GetTickCount64();
+
+   
 }
