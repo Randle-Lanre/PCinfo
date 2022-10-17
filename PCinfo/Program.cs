@@ -35,9 +35,6 @@ float CupValue()
 #endregion
 
 
-
-
-
 // create table 
 var table = new Table();
 
@@ -58,38 +55,27 @@ table.Title(new TableTitle("[bold red] MY PC INFO [/]"));
 Console.WriteLine("\n");
 
 
- AnsiConsole.Live(table).AutoClear(false).Overflow(VerticalOverflow.Ellipsis).Cropping(VerticalOverflowCropping.Top).Start(  x =>
-{
+AnsiConsole.Live(table).AutoClear(false).Overflow(VerticalOverflow.Ellipsis).Cropping(VerticalOverflowCropping.Top)
+    .Start(x =>
+    {
 //row setup
 
-    table.AddRow(new Markup("PC name "), new Markup($"[green] {pcName} [/]"));
-    table.AddRow(new Markup("Username"), new Markup($"[green] {username} [/]"));
-    table.AddRow(new Markup("Wifi"), new Markup($"[green]{IpAddressInformation.FirstOrDefaultWirelessAddress} [/]"));
-    table.AddRow(new Markup("LAN"), new Markup($"[green]{IpAddressInformation.FirstOrDefaultLan} [/]"));
+        table.AddRow(new Markup("PC name "), new Markup($"[green] {pcName} [/]"));
+        table.AddRow(new Markup("Username"), new Markup($"[green] {username} [/]"));
+        table.AddRow(new Markup("Wifi"),
+            new Markup($"[green]{IpAddressInformation.FirstOrDefaultWirelessAddress} [/]"));
+        table.AddRow(new Markup("LAN"), new Markup($"[green]{IpAddressInformation.FirstOrDefaultLan} [/]"));
 
-    table.AddRow(new Markup("connected"), new Markup($"[green] {connected} [/]"));
+        table.AddRow(new Markup("connected"), new Markup($"[green] {connected} [/]"));
 
-    table.AddRow(new Markup("Uptime"), new Markup($"[green]{RuniningTime.Uptime}[/]"));
-    x.Refresh();
-    Thread.Sleep(1000);
-   
-    
-    table.AddRow(new Markup("Used Storage Space"),
-        new Markup(
-            $"[green]Available storage space is {DriveSpace.FormatFileSize(DriveSpace.GetTotalFreeSpace())} [/]"));
-    table.AddRow(new Markup("Ram usage"), new Markup($"[green] {ramCounter.NextValue()} MB [/]"));
-    table.AddRow(new Markup("CPU usage"), new Markup($"[green] {Math.Round(CupValue(), 1)} % [/]"));
-    table.AddRow(new Markup("Window version"), new Markup($"[green] {os} [/]"));
-    
-    
-});
-
-// Console.WriteLine("running time is: {0} ", RuniningTime.TimesRun());
+        table.AddRow(new Markup("Uptime"), new Markup($"[green]{RuniningTime.Uptime}[/]"));
+        x.Refresh();
 
 
-// while (true)
-// {
-//     Timer timer = null;
-//     new Timer(RuniningTime.GetUpTime, null,0, 2000);
-//    
-// }
+        table.AddRow(new Markup("Used Storage Space"),
+            new Markup(
+                $"[green]Available storage space is {DriveSpace.FormatFileSize(DriveSpace.GetTotalFreeSpace())} [/]"));
+        table.AddRow(new Markup("Ram usage"), new Markup($"[green] {ramCounter.NextValue()} MB [/]"));
+        table.AddRow(new Markup("CPU usage"), new Markup($"[green] {Math.Round(CupValue(), 1)} % [/]"));
+        table.AddRow(new Markup("Window version"), new Markup($"[green] {os} [/]"));
+    });
